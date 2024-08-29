@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/onlineshop.css">
+        <title>onlineshop</title>
+        <script src="https://kit.fontawesome.com/b8991598b2.js"></script>
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">LOGO</a>
+
+            <nav>
+                <ul>
+                    <li><a href="#">Cart &#x1F6D2;</a></li>
+                    <li><a href="#">Catalog &bigtriangledown;</a>
+                        <ul>
+                            <li><a href="#">Smartphones</a></li>
+                            <li><a href="#">Laptops and Tablets</a></li>
+                            <li><a href="#">Computers and gadgets</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Search story &#x21BA;</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="searchbox">
+            <input class="searchtxt" type="text" name="" placeholder="Type to search" id="">
+            <a class="searchbtn" href="#">
+                <i class="fas fa-search"></i>
+            </a>
+        </div>
+
+        <div class="fon">
+            <div>
+                <div class="info-container">
+                    <div class="info-block">
+                        <h2><a href="#">Samsung Galaxy 24</a></h2>
+                        <h4><a href="#">128 GB / 8 GB 256 GB / 8 GB 256 GB / 12 GB 512 GB / 8 GB </a></h4>
+                        <a href="#"><img src="img/samsung-galaxy-s24-128gb-amber-yellow.jpg" alt=""></a>  <!--960 960-->
+
+                        <button>Add to cart &#x1F6D2</button>
+                    </div>
+                </div>
+            </div>
+        
+            <div>
+                <div class="info-container">
+                    <div class="info-block">
+                        <h2><a href="#">Apple iPhone 15 Pro Max</a></h2>
+                        <h4><a href="#">256 GB / 8 GB 256 GB / 8 ГБ 512 GB / 8 GB </a></h4>
+                        <a href="#"><img src="img/26881.500@2x.png" alt=""></a>
+
+                        <button>Add to cart &#x1F6D2</button>
+                    </div>
+                </div>
+            </div>
+        
+            <div>
+                <div class="info-container">
+                    <div class="info-block">
+                        <h2><a href="#">HP Victus Gaming, Notebook, mit 16,1 Zoll Display</a></h2>
+                        <h4><a href="#">AMD,8845HS Prozessor, 16 GB RAM, 0 GB SSD, AMD GeForce RTX™ 4060, sienna, FreeDOS</a></h4>
+                        <img src="img/ASSET_MP_143908241.png" alt="">
+
+                        <button>Add to cart &#x1F6D2</button>
+                    </div>
+                </div>
+            </div>
+        
+            <div>
+                <div class="info-container">
+                    <div class="info-block">
+                        <h2><a href="#">ACER Predator Helios Neo 16, Gaming Notebook</a></h2>
+                        <h4><a href="#">mit 16,0 Zoll Display, Intel® Core™ i7,i7-13700HX Prozessor, 32 GB RAM, 1 TB SSD, NVIDIA GeForce RTX™ 4070, Obsidian Black, Windows 11 Home (64 Bit)</a></h4>
+                        <a href="#"><img src="img/ASSET_MMS_135715609.png" alt=""></a> 
+
+                        <button>Add to cart &#x1F6D2</button>
+                    </div>
+                </div>
+            </div>
+        
+            <div>
+                <div class="info-container">
+                    <div class="info-block">
+                        <h2><a href="#">BEASTCOM Q5 | Pro Gaming, Gaming-PC Komplettsystem</a></h2>
+                        <h4><a href="#">mit Intel® Core™ i7, 32 GB RAM, 1 TB SSD, NVIDIA GeForce RTX™ 3060, Windows 11 Pro (64 Bit)</a></h4>
+                        <a href="#"><img src="img/ASSET_MP_137728962.png" alt=""></a> 
+
+                        <button>Add to cart &#x1F6D2</button>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="info-container">
+                    <div class="info-block">
+                        <h2><a href="#">LENOVO Tab M10 (3. Generation)</a></h2>
+                        <h4><a href="#">64 GB, 10,1 Zoll, Storm Gray</a></h4>
+                        <a href="#"><img src="img/ASSET_MMS_96721899.png" alt=""></a> 
+
+                        <button>Add to cart &#x1F6D2</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="foon">
+            <div class="sidebarbox">
+                <div class="sidebar">
+                    <form action="" method="get" class="kantribox">
+                        <input class="kantri" type="text" name="" placeholder="Please enter your country" id="">
+                        <a class="kantribtn" href="#">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                    </form>
+
+                    <form action="" method="get" class="kantribox">
+                        <input class="kantri" type="text" name="" placeholder="Please enter your address" id="">
+                        <a class="kantribtn" href="#">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                    </form>
+
+                    <form action="" method="get" class="kantribox">
+                        <input class="kantri" type="text" name="" placeholder="Please choose the post office" id="">
+                        <a class="kantribtn" href="#">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                    </form>
+
+                    <div class="slider">
+                        <output for="fader" id="price"> 0  &#8364;</output>
+                        <input type="range" id="fader" min="0"  max="5600" value="0" step="1" oninput="outputUpdate(value)">
+                    </div>
+
+                    <script type="text/javascript">
+                        function outputUpdate(value) {
+                            var output = document.querySelector("#price");
+                            var slider = document.querySelector("#fader");
+                    
+                            // Обновляем текст метки с символом €
+                            output.innerHTML = value + " €";
+                    
+                            // Рассчитываем позицию метки
+                            var percent = (value - slider.min) / (slider.max - slider.min); // Доля прогресса
+                            var sliderWidth = slider.clientWidth; // Ширина слайдера
+                            var offset = percent * sliderWidth; // Смещение метки
+                    
+                            // Ограничиваем смещение, чтобы метка не выходила за границы
+                            var outputWidth = output.clientWidth;
+                            var maxOffset = sliderWidth - outputWidth / 2;
+                            offset = Math.min(Math.max(offset, 0), maxOffset);
+                    
+                            // Применяем смещение с центровкой
+                            output.style.left = offset + "px";
+                        }    
+                    </script>
+
+                    <div class="vonzu">
+                        <input type="text" placeholder="from €" class="otdo">
+                        <input type="text" placeholder="to €" class="otdo">
+                    </div>
+
+                    <div class="goods">
+                        <label class="switch">
+                            <input type="checkbox" class="switch-input">
+                            <span class="switch-slider"></span>
+                        </label>
+                        <span class="switch-label">Dark mode</span>
+                    </div>
+
+                    <div class="data-container">
+                        <textarea name="" id="" type="text" class="data-put" placeholder="here you can text us"></textarea>
+                        <a class="databtn" href="#">
+                            <i class="fas fa-paper-plane"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </body>
+
+        <div class="mrgtp">
+            <div class="footer">
+                <div class="footer-info">
+                    <h1>Our contacts &#9742;</h1>
+                    <ol>
+                        <li><a href="#"><h3>Our Instagram <i class="fa fa-instagram" aria-hidden="true"></i></h3></a></li>
+                        <li><a href="#"><h3>Our Twitter <i class="fa fa-twitter" aria-hidden="true"></i></h3></a></li>
+                        <li><a href="#"><h3>ouremail@gmai.com &#9993;</i></h3></a></li>
+                        <li><h3>Our phone number: 0160 1112222 &#128383;</h3></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+</html>
